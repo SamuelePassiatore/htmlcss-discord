@@ -1,3 +1,13 @@
+/* Custom properties */
+:root{
+  --blue: #3161E0;
+  --white: #FFFFFF;
+  --black: #23272A;
+  --grey: #F6F6F6;
+  --light-blue: #8EA1E1;
+}
+
+
 /* Reset */
 * {
   margin: 0;
@@ -13,7 +23,7 @@ body {
 /* Utils */
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -25,10 +35,6 @@ body {
   flex-direction: row-reverse;
 }
 
-.debug .border {
-  border: 2px dashed black;
-}
-
 .bg-white {
   background-color: white;
 }
@@ -38,14 +44,24 @@ body {
 }
 
 header {
-  background-color: lightblue;
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.small-button{
+  padding: 5px 10px;
+  font-size: small;
+  border-radius: 15px;
+  background-color: var(--white);
+  border: 1px solid transparent;
+  margin-right: 20px;
+
 }
 
 /* # Navbar */
 
 .navbar {
   height: 80px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,7 +70,7 @@ header {
 .navbar > * {
   padding: 10px;
   flex-basis: 20%;
-  background-color: goldenrod;
+  background-color: var(--blue);
 }
 
 .navbar-menu {
@@ -62,8 +78,14 @@ header {
   text-align: center;
 }
 
+.navbar-menu > span{
+  margin: 0 10px;
+  font-size: smaller;
+}
+
 .navbar-actions {
   text-align: right;
+  font-size: medium;
 }
 
 /* # Jumbotron */
@@ -71,16 +93,16 @@ header {
 .jumbotron {
   padding: 50px;
   height: 500px;
-  background-color: darkblue;
-
+  background-color: var(--blue);
+  background-image: url('../img/jumbo.png');
+  background-size: contain;
+  background-size: cover;
   display: flex;
   justify-content: center;
 }
 
 .jumbotron .content {
   width: 50%;
-  /* height: 100%; */
-  /* margin: 0 auto; */
   background-color: violet;
 }
 
