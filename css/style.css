@@ -83,13 +83,13 @@ p{
   font-size: small;
   border-radius: 15px;
   border: 1px solid transparent;
-  margin-right: 20px;
 }
 
 .big-button{
-  padding: 10px 15px;
+  padding: 15px 15px;
   border-radius: 25px;
   border: 1px solid transparent;
+  font-size: medium;
 }
 
 .separate{
@@ -230,7 +230,6 @@ section > .container {
   padding-bottom: 20px;
 }
 
-
 /* # Footer */
 
 footer {
@@ -308,11 +307,5 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  background-color: aquamarine;
 }
 
-.footer-bottom > * {
-  padding: 5px 10px;
-  background-color: yellow;
-}
