@@ -57,6 +57,14 @@ body {
   color: var(--white);
 }
 
+.black{
+  color: var(--black);
+}
+
+.white{
+  color: var(--white);
+}
+
 header {
   background-color: var(--blue);
   color: var(--white);
@@ -85,7 +93,6 @@ p{
 }
 
 .fa-down-long{
-  color: var(--black);
   margin-right: 10px;
   font-size: smaller;
 }
@@ -158,6 +165,11 @@ section {
   height: 600px;
 }
 
+.big-section{
+  padding: 100px;
+  height: 1200px;
+}
+
 section > .container {
   height: 100%;
 }
@@ -187,10 +199,31 @@ section > .container {
   padding: 0 80px;
 }
 
-
 .flex > .full-col {
   flex-basis: 100%;
-  background-color: darkgreen;
+  text-align: center;
+}
+
+.container .full-col > h2{
+  font-size: 35px;
+}
+
+.container .full-col > p{
+  font-size: small;
+  padding: 20px 90px;
+}
+
+.container .full-col > img{
+  width:100%;
+}
+
+.container .full-col-question{
+  padding: 30px;
+}
+
+.container .full-col-question > h3{
+  font-size: 20px;
+  padding-bottom: 20px;
 }
 
 
