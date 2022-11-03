@@ -1,6 +1,6 @@
 /* Custom properties */
 :root{
-  --blue: #3161E0;
+  --blue: #255EE9;
   --white: #FFFFFF;
   --black: #23272A;
   --grey: #F6F6F6;
@@ -43,6 +43,20 @@ body {
   background-color: lightgray;
 }
 
+.button-black{
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.button-white{
+  background-color: var(--white);
+}
+
+.button-light-blue{
+  background-color: var(--light-blue);
+  color: var(--white);
+}
+
 header {
   background-color: var(--blue);
   color: var(--white);
@@ -52,10 +66,24 @@ header {
   padding: 5px 10px;
   font-size: small;
   border-radius: 15px;
-  background-color: var(--white);
   border: 1px solid transparent;
   margin-right: 20px;
+}
 
+.big-button{
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid transparent;
+}
+
+.separate{
+  margin-right: 15px;
+}
+
+.fa-down-long{
+  color: var(--black);
+  margin-right: 10px;
+  font-size: smaller;
 }
 
 /* # Navbar */
@@ -92,7 +120,7 @@ header {
 
 .jumbotron {
   padding: 50px;
-  height: 500px;
+  height: 400px;
   background-color: var(--blue);
   background-image: url('../img/jumbo.png');
   background-size: contain;
@@ -103,8 +131,23 @@ header {
 
 .jumbotron .content {
   width: 50%;
-  background-color: violet;
+  height: 100%;
+  text-align: center;
 }
+
+.content > h1{
+font-size: 40px;
+padding-top: 30px;
+}
+
+.content > p{
+  font-size: smaller;
+  padding: 0 55px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  line-height: 20px;
+  }
+
 
 /* # Main & sections */
 section {
