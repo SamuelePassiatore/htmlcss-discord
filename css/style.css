@@ -1,0 +1,160 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Generics */
+body {
+  font-family: sans-serif;
+}
+
+/* Utils */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.debug .border {
+  border: 2px dashed black;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-gray {
+  background-color: lightgray;
+}
+
+header {
+  background-color: lightblue;
+}
+
+/* # Navbar */
+
+.navbar {
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar > * {
+  padding: 10px;
+  flex-basis: 20%;
+  background-color: goldenrod;
+}
+
+.navbar-menu {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.navbar-actions {
+  text-align: right;
+}
+
+/* # Jumbotron */
+
+.jumbotron {
+  padding: 50px;
+  height: 500px;
+  background-color: darkblue;
+
+  display: flex;
+  justify-content: center;
+}
+
+.jumbotron .content {
+  width: 50%;
+  /* height: 100%; */
+  /* margin: 0 auto; */
+  background-color: violet;
+}
+
+/* # Main & sections */
+section {
+  padding: 50px;
+  height: 600px;
+}
+
+section > .container {
+  height: 100%;
+}
+
+.flex > .small-col {
+  flex-basis: 40%;
+  background-color: pink;
+}
+
+.flex > .large-col {
+  flex-basis: 60%;
+  background-color: dodgerblue;
+}
+
+.flex > .full-col {
+  flex-basis: 100%;
+  background-color: darkgreen;
+}
+
+/* # Footer */
+
+footer {
+  padding: 50px;
+  background-color: #23272a;
+  /* color: white; */
+}
+
+.footer-top {
+  height: 600px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid purple;
+
+  display: flex;
+}
+
+.footer-top .footer-left {
+  flex-basis: 30%;
+  background-color: pink;
+}
+
+.footer-top .footer-right {
+  flex-basis: 70%;
+  background-color: #20b2aa;
+}
+
+.footer-nav {
+  height: 100%;
+  display: flex;
+  /* background-color: #fff; */
+}
+
+.footer-nav > div {
+  flex-basis: 25%;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: aquamarine;
+}
+
+.footer-bottom > * {
+  padding: 5px 10px;
+  background-color: yellow;
+}
