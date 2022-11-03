@@ -65,6 +65,10 @@ body {
   color: var(--white);
 }
 
+.light-blue{
+  color: var(--light-blue);
+}
+
 header {
   background-color: var(--blue);
   color: var(--white);
@@ -222,7 +226,7 @@ section > .container {
 }
 
 .container .full-col-question > h3{
-  font-size: 20px;
+  font-size: 25px;
   padding-bottom: 20px;
 }
 
@@ -231,37 +235,73 @@ section > .container {
 
 footer {
   padding: 50px;
-  background-color: #23272a;
-  /* color: white; */
+  background-color: var(--black);
+  color: white;
 }
 
 .footer-top {
   height: 600px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  border-bottom: 1px solid purple;
-
+  border-bottom: 1px solid var(--light-blue);
   display: flex;
 }
 
-.footer-top .footer-left {
+.footer-left, .footer-right{
+  padding: 50px 30px;
+}
+
+.footer-left > h3{
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-left > img{
+  height: 20px;
+  vertical-align: middle;
+}
+
+.footer-left > span, .fa-angle-down{
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.link-social{
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.link-social > .fa-brands{
+  margin-right: 20px;
+}
+
+.footer-top .footer-left{
   flex-basis: 30%;
-  background-color: pink;
 }
 
 .footer-top .footer-right {
   flex-basis: 70%;
-  background-color: #20b2aa;
 }
 
 .footer-nav {
   height: 100%;
   display: flex;
-  /* background-color: #fff; */
 }
 
 .footer-nav > div {
   flex-basis: 25%;
+}
+
+.nav-col > ul{
+  list-style-type: none;
+  font-size: small;
+  line-height: 30px;
+}
+
+.nav-col > ul > li:first-child{
+  color: var(--light-blue);
+  font-size: small;
 }
 
 .footer-bottom {
