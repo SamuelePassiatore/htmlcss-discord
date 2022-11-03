@@ -36,11 +36,11 @@ body {
 }
 
 .bg-white {
-  background-color: white;
+  background-color: var(--white);
 }
 
 .bg-gray {
-  background-color: lightgray;
+  background-color: var(--grey);
 }
 
 .button-black{
@@ -60,6 +60,10 @@ body {
 header {
   background-color: var(--blue);
   color: var(--white);
+}
+
+p{
+  line-height: 20px;
 }
 
 .small-button{
@@ -145,13 +149,12 @@ padding-top: 30px;
   padding: 0 55px;
   padding-top: 30px;
   padding-bottom: 20px;
-  line-height: 20px;
   }
 
 
 /* # Main & sections */
 section {
-  padding: 50px;
+  padding: 100px;
   height: 600px;
 }
 
@@ -161,18 +164,35 @@ section > .container {
 
 .flex > .small-col {
   flex-basis: 40%;
-  background-color: pink;
+  justify-content: flex-start;
 }
 
 .flex > .large-col {
   flex-basis: 60%;
-  background-color: dodgerblue;
+  justify-content: center;
+  align-items: flex-start;
 }
+
+.container .large-col > img{
+  width: 450px;
+}
+
+.container .small-col > h2{
+  font-size: 35px;
+  padding: 20px 80px;
+}
+
+.container .small-col > p{
+  font-size: small;
+  padding: 0 80px;
+}
+
 
 .flex > .full-col {
   flex-basis: 100%;
   background-color: darkgreen;
 }
+
 
 /* # Footer */
 
