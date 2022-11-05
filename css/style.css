@@ -101,6 +101,15 @@ p{
   font-size: smaller;
 }
 
+.wave{
+  filter: opacity(0.04);
+  display: block;
+}
+
+.wave.upside-down{
+  transform: rotate(0.5turn);
+}
+
 /* # Navbar */
 
 .navbar {
